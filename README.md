@@ -19,7 +19,7 @@ In this project, below functionalities exists.
 ## env configuration
 ```bash
 $ cp .env.local .env
-$ Add required details in .env file
+-> Add required details in .env file
 ```
 
 ## Installation
