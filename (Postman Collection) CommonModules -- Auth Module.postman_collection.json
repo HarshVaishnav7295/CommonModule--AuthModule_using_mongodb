@@ -1,0 +1,408 @@
+{
+	"info": {
+		"_postman_id": "07adf4e3-7078-42be-afa3-03abb3addade",
+		"name": "CommonModules -- Auth Module",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25986382"
+	},
+	"item": [
+		{
+			"name": "Auth Module",
+			"item": [
+				{
+					"name": "Register User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav@techtic.agency\",\r\n    \"password\":\"Test@123\",\r\n    \"name\":\"Harsh Vaishnav 3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav@techtic.agency\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/register-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"register-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav2@techtic.agency\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/forgot-password-otp",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"forgot-password-otp"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Forgot Password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav@techtic.agency\",\r\n    \"otp\":\"pFH1kS\",\r\n    \"password\":\"test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/forget-password",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"forget-password"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify Otp",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav@techtic.agency\",\r\n    \"otp\":\"9GWJr#\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/otp-verify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"otp-verify"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav@techtic.agency\",\r\n    \"password\":\"test@123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjA4Mjc1NSwiZXhwIjoxNjkyMzQxOTU1fQ.hLA_VESd3pGrnQkbzhDNU3_hKSjjWpwJ0OcwmohvFfc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/user/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accessToken\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjA4Mjk3NSwiZXhwIjoxNjkyMzQyMTc1fQ.NUScsTKTds9czMaDC65jlo9dHI60em3EQjbXx-hqcV4\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/refreshToken",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"refreshToken"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Social Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"harshvaishnav2@techtic.agency\",\r\n    \"name\":\"Harsh Vaishnav 2\",\r\n    \"fb_id\":\"\",\r\n    \"google_id\":\"123\",\r\n    \"apple_id\":\"\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/auth/socialLogin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"auth",
+								"socialLogin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get My Profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjAxNTU5NSwiZXhwIjoxNjkyMjc0Nzk1fQ._KpwGaFfTNnoFTGWMBE-SwNHNRrcdF5Bcs-0TmjHpDw",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/user/getMyProfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"getMyProfile"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Profile",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjAxNDA5OCwiZXhwIjoxNjkyMjczMjk4fQ.0S6jBsOrx7uTGFVuTYIg62NM49h2pi-ain27kTu08cs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Harsh Vaishnav123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Password",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjAxNDA5OCwiZXhwIjoxNjkyMjczMjk4fQ.0S6jBsOrx7uTGFVuTYIg62NM49h2pi-ain27kTu08cs",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oldPassword\":\"test@1234\",\r\n    \"newPassword\":\"Test@123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8001/api/user/updatePassword",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								"updatePassword"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Profile",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OGFkNDMxNmYxOTM1ODc4YzBkMmNjNiIsImVtYWlsIjoiaGFyc2h2YWlzaG5hdkB0ZWNodGljLmFnZW5jeSIsImlhdCI6MTY5MjAxNDA5OCwiZXhwIjoxNjkyMjczMjk4fQ.0S6jBsOrx7uTGFVuTYIg62NM49h2pi-ain27kTu08cs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8001/api/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8001",
+							"path": [
+								"api",
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

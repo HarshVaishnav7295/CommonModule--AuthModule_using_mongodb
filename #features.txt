@@ -1,0 +1,10 @@
+0> Register
+1> Login
+2> Send OTP through email
+3> Verify OTP through email
+4> User Profile GET
+5> User Profile Update
+6> Delete Account ( soft-delete )
+7> Change Password
+8> Forgot Password
+9> Social Login
