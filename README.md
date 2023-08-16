@@ -37,3 +37,12 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## Calling APIs
+
+```bash
+# using Swagger
+-> visit "http://localhost:8001/" for accessing apis.
+
+# using Postman
+-> Here, Postman collection is provided, so use it to access apis.
+```
